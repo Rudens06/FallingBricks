@@ -85,13 +85,13 @@ def main():
         hit = True
         break
     
-    if hit:
-      lost_text = FONT.render("You lost!", 1, "black")
-      WIN.blit(lost_text, 
-              (WIDTH/2 - lost_text.get_width()/2, HEIGHT/2 - lost_text.get_height()/2))
-      pygame.display.update()
-      pygame.time.delay(3000)
-      break
+    # if hit:
+    #   lost_text = FONT.render("You lost!", 1, "black")
+    #   WIN.blit(lost_text, 
+    #           (WIDTH/2 - lost_text.get_width()/2, HEIGHT/2 - lost_text.get_height()/2))
+    #   pygame.display.update()
+    #   pygame.time.delay(3000)
+    #   break
             
     player.move()
     draw(player, player2, elapsed_time, stars)
